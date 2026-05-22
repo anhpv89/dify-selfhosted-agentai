@@ -1,0 +1,16 @@
+# ====================================================================
+# Dify Deployment Stack - Optimized by AgentAI (agentai.io.vn)
+# Target Environment: Ubuntu 24.04 / Debian 12 (Minimum 4 Cores, 8GB RAM)
+# ====================================================================
+
+version: '3'
+
+services:
+  # We use the official Dify docker-compose setup
+  # This acts as a wrapper for our automated deployment script
+  dify-setup:
+    image: alpine:latest
+    command: echo "AgentAI Dify self-hosted infrastructure wrapper initialized. Please fetch the official docker/docker-compose.yaml from langgenius/dify to proceed with full deployment."
+    
+# Full production deployment scripts and reverse-proxy configs (Nginx/Caddy) 
+# will be updated in the upcoming commit.
